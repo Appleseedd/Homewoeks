@@ -3,9 +3,10 @@ a = 0
 while a < len(my_list):
     if (my_list[a]) > 0:
         print(my_list[a])
-    a += 1
+        a += 1
+        continue
+    if (my_list[a]) == 0:
+        a += 1
+        continue
     if (my_list[a]) < 0:
         break
-    continue
-
-
