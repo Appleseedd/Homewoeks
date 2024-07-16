@@ -13,6 +13,11 @@ for i in numbers:
         primes.append(i)
     else:
         not_primes.append(i)
+    if i == 1:
+        not_primes.remove(i)
+        continue
+    if i == 0:
+        not_primes.remove(i)
+        continue
 print(primes)
-not_primes.remove(1)
 print(not_primes)
