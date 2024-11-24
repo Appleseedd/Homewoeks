@@ -4,7 +4,7 @@ class House:
         self.number_of_floors = number_of_floors
 
     def __str__(self):
-        return self.name
+        return self.name + f' {self.number_of_floors}'
 
     def __len__(self):
         return self.number_of_floors
@@ -46,13 +46,6 @@ class House:
     def __radd__(self, value):
         self.number_of_floors += value
         return self.number_of_floors
-
-    #def go_to(self, new_floor):
-    #    if new_floor > self.number_of_floors or new_floor < 1:
-    #        print('Такого этажа не существует')
-    #    elif self.number_of_floors >= new_floor and new_floor >= 1:
-    #        for i in range(1, new_floor + 1):
-    #            print(i)
 
 
 h1 = House('ЖК Эльбрус', 10)
